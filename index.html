@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Ameen personal AI assistant">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+  <title>Ameen AI</title>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="orb" aria-hidden="true">A</div>
+      <div><h1>AMEEN</h1><p>Your personal AI assistant</p></div>
+      <span class="status">● ONLINE</span>
+    </header>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <article class="bubble assistant"><b>Ameen</b><p>Hello! I'm Ameen. How can I help you today?</p></article>
+    </section>
+
+    <div class="controls">
+      <button id="voice" class="secondary" type="button" title="Speak">🎙</button>
+      <input id="message" type="text" placeholder="Message Ameen..." autocomplete="off">
+      <button id="send" type="button">Send</button>
+    </div>
+    <div class="bottom">
+      <label><input id="speak" type="checkbox" checked> Read replies aloud</label>
+      <button id="clear" class="text-button" type="button">Clear chat</button>
+    </div>
+    <p id="hint" class="hint">Voice input depends on browser support. Your API key stays on the server.</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
